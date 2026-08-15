@@ -21,6 +21,10 @@
 		8568B7B7303068E0009CBB9E /* TodoRepositoryProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8568B7B6303068E0009CBB9E /* TodoRepositoryProtocal.swift */; };
 		8568B7B930306A9E009CBB9E /* MockTodoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8568B7B830306A9E009CBB9E /* MockTodoRepository.swift */; };
 		8568B7BB30306B4F009CBB9E /* TodoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8568B7BA30306B4F009CBB9E /* TodoRepository.swift */; };
+		8568B7BF3030A2F8009CBB9E /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8568B7BE3030A2F8009CBB9E /* Destination.swift */; };
+		8568B7C13030A305009CBB9E /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8568B7C03030A305009CBB9E /* AppRouter.swift */; };
+		8568B7C33030A311009CBB9E /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8568B7C23030A311009CBB9E /* DIContainer.swift */; };
+		8568B7C53030A329009CBB9E /* DIContainer+Registrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8568B7C43030A329009CBB9E /* DIContainer+Registrations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,10 @@
 		8568B7B6303068E0009CBB9E /* TodoRepositoryProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRepositoryProtocal.swift; sourceTree = "<group>"; };
 		8568B7B830306A9E009CBB9E /* MockTodoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTodoRepository.swift; sourceTree = "<group>"; };
 		8568B7BA30306B4F009CBB9E /* TodoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRepository.swift; sourceTree = "<group>"; };
+		8568B7BE3030A2F8009CBB9E /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		8568B7C03030A305009CBB9E /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		8568B7C23030A311009CBB9E /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		8568B7C43030A329009CBB9E /* DIContainer+Registrations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DIContainer+Registrations.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,8 @@
 		8568B7A030303440009CBB9E /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				8568B7BD3030A2DB009CBB9E /* Coordinator */,
+				8568B7BC3030A2D2009CBB9E /* DI */,
 				8568B7B5303068BF009CBB9E /* Repositories */,
 				8568B7B03030659C009CBB9E /* Models */,
 				8568B7A930305192009CBB9E /* Theme */,
@@ -119,6 +129,24 @@
 				8568B7BA30306B4F009CBB9E /* TodoRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		8568B7BC3030A2D2009CBB9E /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				8568B7C23030A311009CBB9E /* DIContainer.swift */,
+				8568B7C43030A329009CBB9E /* DIContainer+Registrations.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		8568B7BD3030A2DB009CBB9E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8568B7BE3030A2F8009CBB9E /* Destination.swift */,
+				8568B7C03030A305009CBB9E /* AppRouter.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +225,12 @@
 				8568B7B4303066FD009CBB9E /* TodoCategory.swift in Sources */,
 				8568B7AD3030527E009CBB9E /* AppFonts.swift in Sources */,
 				8568B7A830304C87009CBB9E /* Date+Formatting.swift in Sources */,
+				8568B7C53030A329009CBB9E /* DIContainer+Registrations.swift in Sources */,
+				8568B7BF3030A2F8009CBB9E /* Destination.swift in Sources */,
+				8568B7C13030A305009CBB9E /* AppRouter.swift in Sources */,
 				8568B7B7303068E0009CBB9E /* TodoRepositoryProtocal.swift in Sources */,
 				8568B7A130303440009CBB9E /* ContentView.swift in Sources */,
+				8568B7C33030A311009CBB9E /* DIContainer.swift in Sources */,
 				8568B7BB30306B4F009CBB9E /* TodoRepository.swift in Sources */,
 				8568B7A230303440009CBB9E /* TodoListApp.swift in Sources */,
 				8568B7AF303064DE009CBB9E /* AppConstants.swift in Sources */,
