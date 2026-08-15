@@ -25,6 +25,11 @@
 		8568B7C13030A305009CBB9E /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8568B7C03030A305009CBB9E /* AppRouter.swift */; };
 		8568B7C33030A311009CBB9E /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8568B7C23030A311009CBB9E /* DIContainer.swift */; };
 		8568B7C53030A329009CBB9E /* DIContainer+Registrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8568B7C43030A329009CBB9E /* DIContainer+Registrations.swift */; };
+		8568B7C83030B596009CBB9E /* TaskCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8568B7C73030B596009CBB9E /* TaskCardView.swift */; };
+		8568B7CA3030BB48009CBB9E /* CategoryPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8568B7C93030BB48009CBB9E /* CategoryPillView.swift */; };
+		8568B7CC3030BBA0009CBB9E /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8568B7CB3030BBA0009CBB9E /* SearchBarView.swift */; };
+		8568B7CE3030BBC4009CBB9E /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8568B7CD3030BBC4009CBB9E /* EmptyStateView.swift */; };
+		8568B7D03030BBE4009CBB9E /* AppHeaderView..swift in Sources */ = {isa = PBXBuildFile; fileRef = 8568B7CF3030BBE4009CBB9E /* AppHeaderView..swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +52,11 @@
 		8568B7C03030A305009CBB9E /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		8568B7C23030A311009CBB9E /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		8568B7C43030A329009CBB9E /* DIContainer+Registrations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DIContainer+Registrations.swift"; sourceTree = "<group>"; };
+		8568B7C73030B596009CBB9E /* TaskCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCardView.swift; sourceTree = "<group>"; };
+		8568B7C93030BB48009CBB9E /* CategoryPillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPillView.swift; sourceTree = "<group>"; };
+		8568B7CB3030BBA0009CBB9E /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		8568B7CD3030BBC4009CBB9E /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		8568B7CF3030BBE4009CBB9E /* AppHeaderView..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHeaderView..swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +90,7 @@
 		8568B7A030303440009CBB9E /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				8568B7C63030B583009CBB9E /* Componentas */,
 				8568B7BD3030A2DB009CBB9E /* Coordinator */,
 				8568B7BC3030A2D2009CBB9E /* DI */,
 				8568B7B5303068BF009CBB9E /* Repositories */,
@@ -147,6 +158,18 @@
 				8568B7C03030A305009CBB9E /* AppRouter.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		8568B7C63030B583009CBB9E /* Componentas */ = {
+			isa = PBXGroup;
+			children = (
+				8568B7C73030B596009CBB9E /* TaskCardView.swift */,
+				8568B7C93030BB48009CBB9E /* CategoryPillView.swift */,
+				8568B7CB3030BBA0009CBB9E /* SearchBarView.swift */,
+				8568B7CD3030BBC4009CBB9E /* EmptyStateView.swift */,
+				8568B7CF3030BBE4009CBB9E /* AppHeaderView..swift */,
+			);
+			path = Componentas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,8 +247,10 @@
 			files = (
 				8568B7B4303066FD009CBB9E /* TodoCategory.swift in Sources */,
 				8568B7AD3030527E009CBB9E /* AppFonts.swift in Sources */,
+				8568B7CE3030BBC4009CBB9E /* EmptyStateView.swift in Sources */,
 				8568B7A830304C87009CBB9E /* Date+Formatting.swift in Sources */,
 				8568B7C53030A329009CBB9E /* DIContainer+Registrations.swift in Sources */,
+				8568B7C83030B596009CBB9E /* TaskCardView.swift in Sources */,
 				8568B7BF3030A2F8009CBB9E /* Destination.swift in Sources */,
 				8568B7C13030A305009CBB9E /* AppRouter.swift in Sources */,
 				8568B7B7303068E0009CBB9E /* TodoRepositoryProtocal.swift in Sources */,
@@ -233,9 +258,12 @@
 				8568B7C33030A311009CBB9E /* DIContainer.swift in Sources */,
 				8568B7BB30306B4F009CBB9E /* TodoRepository.swift in Sources */,
 				8568B7A230303440009CBB9E /* TodoListApp.swift in Sources */,
+				8568B7CC3030BBA0009CBB9E /* SearchBarView.swift in Sources */,
+				8568B7D03030BBE4009CBB9E /* AppHeaderView..swift in Sources */,
 				8568B7AF303064DE009CBB9E /* AppConstants.swift in Sources */,
 				8568B7AB303051A6009CBB9E /* AppColors.swift in Sources */,
 				8568B7B930306A9E009CBB9E /* MockTodoRepository.swift in Sources */,
+				8568B7CA3030BB48009CBB9E /* CategoryPillView.swift in Sources */,
 				8568B7B2303065B2009CBB9E /* TodoItem.swift in Sources */,
 				8568B7A630303478009CBB9E /* Color+Hex.swift in Sources */,
 			);
